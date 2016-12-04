@@ -756,8 +756,7 @@ namespace JavaScriptFileCollector.Config {
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnConfigCategoryID}, true));
                 this.columnConfigCategoryID.AutoIncrement = true;
-                this.columnConfigCategoryID.AutoIncrementSeed = -1;
-                this.columnConfigCategoryID.AutoIncrementStep = -1;
+                this.columnConfigCategoryID.AutoIncrementSeed = 1;
                 this.columnConfigCategoryID.AllowDBNull = false;
                 this.columnConfigCategoryID.Unique = true;
             }
@@ -1118,8 +1117,7 @@ namespace JavaScriptFileCollector.Config {
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnFolderListID}, true));
                 this.columnFolderListID.AutoIncrement = true;
-                this.columnFolderListID.AutoIncrementSeed = -1;
-                this.columnFolderListID.AutoIncrementStep = -1;
+                this.columnFolderListID.AutoIncrementSeed = 1;
                 this.columnFolderListID.AllowDBNull = false;
                 this.columnFolderListID.Unique = true;
                 this.columnConfigCategoryID.AllowDBNull = false;
