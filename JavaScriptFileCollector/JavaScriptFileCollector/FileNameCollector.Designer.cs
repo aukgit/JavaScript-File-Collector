@@ -34,7 +34,11 @@
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.ConfigurationFilePathText = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,38 +47,46 @@
             this.exportCollectedFileToDiskToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.FolderInformationGroup = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.config = new JavaScriptFileCollector.Config.Config();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.ConfigDataSet = new JavaScriptFileCollector.Config.Config();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.applicationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.folderListBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.configCategoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.FolderInformationGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.config)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.applicationBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.folderListBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.configCategoryBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // listBox1
@@ -140,13 +152,48 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // textBox2
+            // textBox3
             // 
-            this.textBox2.Location = new System.Drawing.Point(324, 54);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(851, 27);
-            this.textBox2.TabIndex = 3;
+            this.textBox3.Location = new System.Drawing.Point(124, 79);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(596, 27);
+            this.textBox3.TabIndex = 0;
+            this.toolTip1.SetToolTip(this.textBox3, "Extensions with coma");
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(124, 116);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(611, 27);
+            this.textBox4.TabIndex = 3;
+            this.toolTip1.SetToolTip(this.textBox4, "Extensions with coma");
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(124, 153);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(718, 27);
+            this.textBox5.TabIndex = 9;
+            this.toolTip1.SetToolTip(this.textBox5, "Extensions with coma");
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(124, 186);
+            this.textBox6.Multiline = true;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(718, 72);
+            this.textBox6.TabIndex = 11;
+            this.toolTip1.SetToolTip(this.textBox6, "Extensions with coma");
+            // 
+            // ConfigurationFilePathText
+            // 
+            this.ConfigurationFilePathText.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::JavaScriptFileCollector.Properties.Settings.Default, "ConfigName", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.ConfigurationFilePathText.Location = new System.Drawing.Point(324, 54);
+            this.ConfigurationFilePathText.Margin = new System.Windows.Forms.Padding(4);
+            this.ConfigurationFilePathText.Name = "ConfigurationFilePathText";
+            this.ConfigurationFilePathText.Size = new System.Drawing.Size(851, 27);
+            this.ConfigurationFilePathText.TabIndex = 3;
+            this.ConfigurationFilePathText.Text = global::JavaScriptFileCollector.Properties.Settings.Default.ConfigName;
             // 
             // label1
             // 
@@ -205,6 +252,11 @@
             // 
             // FolderInformationGroup
             // 
+            this.FolderInformationGroup.Controls.Add(this.button4);
+            this.FolderInformationGroup.Controls.Add(this.button3);
+            this.FolderInformationGroup.Controls.Add(this.label6);
+            this.FolderInformationGroup.Controls.Add(this.comboBox1);
+            this.FolderInformationGroup.Controls.Add(this.checkBox1);
             this.FolderInformationGroup.Controls.Add(this.label5);
             this.FolderInformationGroup.Controls.Add(this.textBox6);
             this.FolderInformationGroup.Controls.Add(this.label4);
@@ -217,64 +269,38 @@
             this.FolderInformationGroup.Controls.Add(this.textBox3);
             this.FolderInformationGroup.Location = new System.Drawing.Point(327, 88);
             this.FolderInformationGroup.Name = "FolderInformationGroup";
-            this.FolderInformationGroup.Size = new System.Drawing.Size(863, 264);
+            this.FolderInformationGroup.Size = new System.Drawing.Size(863, 357);
             this.FolderInformationGroup.TabIndex = 6;
             this.FolderInformationGroup.TabStop = false;
             this.FolderInformationGroup.Text = "Folder Information";
             // 
-            // textBox3
+            // checkBox1
             // 
-            this.textBox3.Location = new System.Drawing.Point(124, 79);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(718, 27);
-            this.textBox3.TabIndex = 0;
-            this.toolTip1.SetToolTip(this.textBox3, "Extensions with coma");
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(726, 83);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(116, 23);
+            this.checkBox1.TabIndex = 13;
+            this.checkBox1.Text = "Should Export";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // label5
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(52, 82);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 19);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "File Type";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(18, 189);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(97, 19);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Export format";
             // 
-            // label3
+            // label4
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(69, 119);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 19);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Folder";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(124, 116);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(611, 27);
-            this.textBox4.TabIndex = 3;
-            this.toolTip1.SetToolTip(this.textBox4, "Extensions with coma");
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(742, 116);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 27);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Browse";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // bindingSource1
-            // 
-            this.bindingSource1.DataSource = this.config;
-            this.bindingSource1.Position = 0;
-            // 
-            // config
-            // 
-            this.config.DataSetName = "Config";
-            this.config.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(18, 156);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(100, 19);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Pattern match";
             // 
             // bindingNavigator1
             // 
@@ -295,7 +321,8 @@
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
             this.toolStripButton1,
-            this.toolStripButton2});
+            this.toolStripButton2,
+            this.toolStripButton3});
             this.bindingNavigator1.Location = new System.Drawing.Point(3, 23);
             this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem;
@@ -306,6 +333,41 @@
             this.bindingNavigator1.Size = new System.Drawing.Size(857, 25);
             this.bindingNavigator1.TabIndex = 8;
             this.bindingNavigator1.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataSource = this.ConfigDataSet;
+            this.bindingSource1.Position = 0;
+            // 
+            // ConfigDataSet
+            // 
+            this.ConfigDataSet.DataSetName = "Config";
+            this.ConfigDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -339,16 +401,9 @@
             this.bindingNavigatorPositionItem.Text = "1";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -371,26 +426,8 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // toolStripButton1
             // 
@@ -410,39 +447,99 @@
             this.toolStripButton2.Size = new System.Drawing.Size(52, 22);
             this.toolStripButton2.Text = "Preview";
             // 
-            // label4
+            // button2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 156);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 19);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Pattern match";
+            this.button2.Location = new System.Drawing.Point(742, 116);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(100, 27);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Browse";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // label3
             // 
-            this.textBox5.Location = new System.Drawing.Point(124, 153);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(718, 27);
-            this.textBox5.TabIndex = 9;
-            this.toolTip1.SetToolTip(this.textBox5, "Extensions with coma");
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(69, 119);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(49, 19);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Folder";
             // 
-            // label5
+            // label2
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(18, 189);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 19);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Export format";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(52, 82);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(66, 19);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "File Type";
             // 
-            // textBox6
+            // comboBox1
             // 
-            this.textBox6.Location = new System.Drawing.Point(124, 186);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(718, 27);
-            this.textBox6.TabIndex = 11;
-            this.toolTip1.SetToolTip(this.textBox6, "Extensions with coma");
+            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.folderListBindingSource, "ConfigCategoryID", true));
+            this.comboBox1.DataSource = this.configCategoryBindingSource;
+            this.comboBox1.DisplayMember = "ConfigName";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(124, 264);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(596, 27);
+            this.comboBox1.TabIndex = 14;
+            this.comboBox1.ValueMember = "ConfigCategoryID";
+            // 
+            // applicationBindingSource
+            // 
+            this.applicationBindingSource.DataMember = "Application";
+            this.applicationBindingSource.DataSource = this.bindingSource1;
+            // 
+            // folderListBindingSource
+            // 
+            this.folderListBindingSource.DataMember = "FolderList";
+            this.folderListBindingSource.DataSource = this.bindingSource1;
+            // 
+            // configCategoryBindingSource
+            // 
+            this.configCategoryBindingSource.DataMember = "ConfigCategory";
+            this.configCategoryBindingSource.DataSource = this.bindingSource1;
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(76, 22);
+            this.toolStripButton3.Text = "Save as XML";
+            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(52, 272);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(67, 19);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Catagory";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(788, 265);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(54, 27);
+            this.button3.TabIndex = 16;
+            this.button3.Text = "Add";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(726, 265);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(54, 27);
+            this.button4.TabIndex = 17;
+            this.button4.Text = "Edit";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // FileNameCollector
             // 
@@ -451,7 +548,7 @@
             this.ClientSize = new System.Drawing.Size(1300, 843);
             this.Controls.Add(this.FolderInformationGroup);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.ConfigurationFilePathText);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
@@ -461,17 +558,21 @@
             this.Name = "FileNameCollector";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "File name collector";
+            this.Load += new System.EventHandler(this.FileNameCollector_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.FolderInformationGroup.ResumeLayout(false);
             this.FolderInformationGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.config)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.applicationBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.folderListBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.configCategoryBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -487,7 +588,7 @@
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox ConfigurationFilePathText;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button DeleteItemToListButton;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -503,7 +604,7 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.BindingSource bindingSource1;
-        private Config.Config config;
+        private Config.Config ConfigDataSet;
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
@@ -522,6 +623,15 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.BindingSource folderListBindingSource;
+        private System.Windows.Forms.BindingSource configCategoryBindingSource;
+        private System.Windows.Forms.BindingSource applicationBindingSource;
+        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label6;
     }
 }
 
